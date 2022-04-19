@@ -2,7 +2,7 @@
 <html>
     <head>
         <!-- external css-->
-        <link rel="stylesheet" href="../css/styles.css" />
+        <link rel="stylesheet" href="../css/styles.css"/>
         <!-- grid -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
         <!-- icon -->
@@ -89,10 +89,10 @@
             <div class="col-sm-5"" style="margin: 5px;">
                 <h3 style="padding-bottom: 15px;">Top Up dan Tagihan</h3>
                 <div class="row" style="text-align: center;">
-                    <div class="col-sm-3 content-nav">
+                    <div class="col-sm-3 content-nav" id="kat-pulsa">
                         Pulsa
                     </div>
-                    <div class="col-sm-3 content-nav">
+                    <div class="col-sm-3 content-nav" id="kat-paket-data">
                         Paket
                     </div>
                     <div class="col-sm-3 content-nav">
@@ -113,10 +113,31 @@
                         <label for="">
                             Nominal
                         </label>
-                        <input type="text" class="pulsa" disabled>
+						<select id="pulsa-1" class="form-control" style="color: #929292;" disabled>
+						<option value="0">Pilih</option>
+                                    <option value="1000">Rp. 1.000</option>
+                                    <option value="3000">Rp. 3.000</option>
+                                    <option value="5000">Rp. 5.000</option>
+                                    <option value="10000">Rp. 10.000</option>
+                                    <option value="15000">Rp. 15.000</option>
+                                    <option value="20000">Rp. 20.000</option>
+                                    <option value="25000">Rp. 25.000</option>
+                                    <option value="50000">Rp. 50.000</option>
+                                    <option value="100000">Rp. 100.000</option>
+
+                                </select>
+                                <select id="paket-1" class="form-control" style="color: #929292;" disabled hidden>
+
+                                    <option value="0">Pilih</option>
+                                    <option value="1000">Rp. 1.000</option>
+                                    <option value="3000">Rp. 3.000</option>
+                                    <option value="5000">Rp. 5.000</option>
+                                    <option value="10000">Rp. 10.000</option>
+
+                                </select>
                     </div>
-                    <div class="col-sm-2" style="margin-top: 25px;">
-                        <button class="medium-header-fill-grey">Beli</button>
+                   <button disabled id="btn1" class="btn px-3" style="background-color: #4950572e; color: #929292; font-family: 'Open Sans', sans;">Beli</button>
+                        <button disabled hidden id="btn2" class="btn px-3" style="background-color: #4950572e; color: #929292; font-family: 'Open Sans', sans;">Beli</button>
                     </div>
                 </div>
             </div>
@@ -153,3 +174,5 @@
 		</nav>
     </body>
 </html>
+
+<script text="javascript"src="../js/script.js"></script>

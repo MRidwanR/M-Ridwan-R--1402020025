@@ -103,6 +103,16 @@ a:hover.medium-header{
   text-decoration: none;
   align-content: center;
 }
+.form-control {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid #cdcdcd;
+    z-index: 1;
+}
+
 
 .content{
   padding: 20px 30px 20px 30px;
@@ -147,4 +157,15 @@ div.content-nav{
 	padding: 0 20px;
 	list-style: none;
 	
+}
+.btn {
+    border-radius: 8px;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #03ac0e;
+}
+.btn:first-child {
+    background-color: #ffffff;
+    border: 1px solid #03ac0e;
+    color: #03ac0e;
 }
